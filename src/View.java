@@ -6,6 +6,7 @@ import java.util.Locale;
  * "showMessage()" will display the information users need to know before they enter the text
  * "errorMessage()" will display alert if users do not enter correct text
  * "generateMessage()" will generate the result and display on the screen to users
+ * "quitMessage()" provide users an option to quit the game
  * "resetValue()" will reset all values in View class
  */
 
@@ -62,6 +63,8 @@ public class View {
     public void welcomeMessage() {
         System.out.println("Welcome to the car game!");
     }
+
+    public void quitMessage() { System.out.println("Do you want to quit now?(y/n)"); }
 
     public void resetValue() {
         brand = "";

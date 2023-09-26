@@ -74,7 +74,7 @@ public class Controller {
     }
 
     private void quit() {
-        System.out.println("Do you want to quit now?(y/n)");
+        view.quitMessage();
         Scanner scanner = new Scanner(System.in);
         String res = scanner.nextLine();
         res = res.toLowerCase(Locale.ROOT);
